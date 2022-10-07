@@ -28,12 +28,12 @@ public class Main {
 
         System.out.println("------------------------------------");
 
-        System.out.println("Total Bill Before Tip: " + tip1.getTotalBeforeTip());
+        System.out.println("Total Bill Before Tip: " + formatter.format(tip1.getTotalBeforeTip()));
         System.out.println("Tip Percentage: " + tip1.getTipPercent());
-        System.out.println("Total Tip: " + tip1.tipAmount());
-        System.out.println("Total Bill With Tip: " + tip1.totalBill());
+        System.out.println("Total Tip: " + formatter.format(tip1.tipAmount()));
+        System.out.println("Total Bill With Tip: " + formatter.format(tip1.totalBill()));
         System.out.println("Per Person Cost Before Tip: " + tip1.perPersonCostBeforeTip());
-        System.out.println("Tip Per Person: " + tip1.perPersonTipAmount());
-        System.out.println("Total Cost Per Person: " + tip1.perPersonTotalCost());
+        System.out.println("Tip Per Person: " + formatter.format(tip1.perPersonTipAmount()));
+        System.out.println("Total Cost Per Person: " + formatter.format(tip1.perPersonTotalCost()));
     }
 }
